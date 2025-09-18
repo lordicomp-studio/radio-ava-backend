@@ -1,0 +1,7 @@
+.simpleFade-enter-active, .simpleFade-leave-active {
+    transition: all .2s ease-in-out!important;
+}
+
+.simpleFade-enter-from, .simpleFade-leave-to {
+    opacity: 0;
+}

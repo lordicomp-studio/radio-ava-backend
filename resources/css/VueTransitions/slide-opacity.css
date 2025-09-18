@@ -1,0 +1,12 @@
+.slide-opacity-enter-active {
+    @apply transition-all ease-in-out duration-200;
+}
+
+.slide-opacity-leave-active {
+    @apply transition-all ease-in-out duration-200;
+}
+
+.slide-opacity-enter-from,
+.slide-opacity-leave-to {
+    @apply opacity-0;
+}

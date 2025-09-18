@@ -1,0 +1,26 @@
+@import "font-faces.css";
+@import "addDefaultStyle.pcss";
+
+/* components */
+@import "components/buttons.pcss";
+@import "components/inputs.css";
+@import "components/modals.css";
+@import "components/select.pcss";
+@import "components/ProgressBar.css";
+@import "components/tableActionsButton.pcss";
+@import "components/scrollBar.pcss";
+
+/* transitions */
+@import "VueTransitions/transitions.css";
+
+/* Tailwind directives */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    body{
+        @apply bg-[#F5F8FA];
+    }
+}
+

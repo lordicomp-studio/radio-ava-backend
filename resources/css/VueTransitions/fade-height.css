@@ -1,0 +1,19 @@
+.fadeHeight-enter-active, .fadeHeight-leave-active {
+    transition: all .4s ease-in-out!important;
+    max-height: 230px;
+}
+
+.fadeHeight-enter-from, .fadeHeight-leave-to {
+    opacity: 0;
+    max-height: 0;
+}
+
+/* fade height large for divs with longer heights */
+.fadeHeightLong-enter-active, .fadeHeightLong-leave-active {
+    transition: all .55s ease-in-out!important;
+    max-height: 400px;
+}
+.fadeHeightLong-enter-from, .fadeHeightLong-leave-to {
+    opacity: 0;
+    max-height: 0;
+}

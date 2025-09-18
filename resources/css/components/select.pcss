@@ -1,0 +1,56 @@
+@layer components{
+    .select{
+        @apply relative select-none bg-gray-50;
+        > div.selectedOption{
+            @apply border border-[#e4e6ef] p-2.5 flex justify-between rounded-lg cursor-pointer;
+            > h4{
+                @apply text-sm text-[#a1a5b7] grid justify-start items-center px-1;
+            }
+            > i{
+                @apply items-center grid;
+            }
+        }
+        > div.options{
+            @apply absolute top-full z-10 overflow-hidden right-0 left-0 bg-white rounded-lg
+            max-h-60 overflow-y-auto shadow-lg shadow-gray-300 grid grid-cols-1;
+            > div{
+                @apply p-4;
+            }
+            > ul{
+                > li{
+                    > span{
+                        @apply text-gray-700 text-base transition-all duration-200 cursor-pointer
+                        font-light px-3 py-1.5 flex items-center justify-between hover:text-[#009ef7] hover:bg-[#f1faff];
+                    }
+                }
+            }
+        }
+    }
+
+    .selectBasic{
+        > div.options > ul > li > span{
+            &.active{
+                @apply text-white bg-[#009ef7];
+            }
+            > i{
+                @apply items-center grid;
+            }
+        }
+    }
+
+    .selectMultiple{
+        > ul{
+            @apply grid grid-cols-[repeat(auto-fit,minmax(3rem,auto))] gap-x-2 justify-start;
+            > li{
+                @apply w-fit mt-2;
+                > span{
+                    @apply bg-secondary flex items-center text-xs p-2 text-[#5e6278] text-center rounded;
+                    > i{
+                        @apply ml-2 cursor-pointer;
+                    }
+                }
+            }
+        }
+    }
+
+}

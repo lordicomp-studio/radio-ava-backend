@@ -1,0 +1,62 @@
+/* z-index is set to '900' because izi-toast package uses z-index of '999' */
+
+.modal-small-back{
+    @apply fixed h-[120%] top-0 bottom-0 bg-black bg-opacity-30 grid justify-center items-start right-0 left-0 z-[900];
+}
+
+.modal-small-page{
+    @apply bg-white rounded-lg w-[30rem] mt-10;
+}
+
+.modal-small-title{
+    @apply border-b border-[#eff2f5] p-8 text-right;
+}
+
+.modal-small-description{
+    @apply border-b border-[#eff2f5] p-8 font-light text-sm text-[#5e6278] text-right;
+}
+
+.modal-small-buttons{
+    @apply flex justify-start p-8;
+}
+
+.modal-full-back{
+    @apply fixed top-0 bottom-0 right-0 left-0 z-[900];
+}
+
+.modal-full-page{
+    @apply bg-white h-full;
+}
+
+.modal-full-title{
+    @apply border-b border-[#eff2f5] p-8 text-right;
+}
+
+.modal-full-description{
+    @apply border-b border-[#eff2f5] p-8 font-light text-sm text-[#5e6278] text-right;
+}
+
+.modal-full-buttons{
+    @apply flex justify-start p-8;
+}
+/**/
+.modal-custom-back{
+    @apply fixed h-[120%] top-0 bottom-0 bg-black bg-opacity-30
+    grid justify-center items-start right-0 left-0 z-[900];
+}
+
+.modal-custom-page{
+    @apply bg-white rounded-lg w-min mt-10;
+}
+
+.modal-custom-title{
+    @apply border-b border-[#eff2f5] p-8 text-right;
+}
+
+.modal-custom-description{
+    @apply border-b border-[#eff2f5] p-8 font-light text-sm text-[#5e6278] text-right;
+}
+
+.modal-custom-buttons{
+    @apply /*flex justify-start*/ p-8;
+}

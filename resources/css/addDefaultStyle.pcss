@@ -1,0 +1,49 @@
+.with-default-style{
+    html {
+        font-family: revert;
+    }
+
+    *, html {
+        margin: revert;
+        padding: revert;
+        line-height: revert;
+    }
+
+    * {
+        outline: none;
+        border: 0;
+        font-style: normal;
+        list-style: revert;
+    }
+
+    button, input, select, select option, textarea {
+        font-family: revert;
+    }
+
+    button, input[type=submit] {
+        cursor: pointer
+    }
+
+    a, input:focus, li {
+        outline: revert;
+    }
+
+    a, li {
+        text-decoration: revert;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out
+    }
+
+    li {
+        -webkit-transition: none;
+        transition: none
+    }
+
+    *, :after, :before {
+        box-sizing: border-box
+    }
+
+    i{
+        font-style: italic;
+    }
+}

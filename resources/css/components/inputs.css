@@ -1,0 +1,58 @@
+@layer components {
+    input.input-text{
+        @apply py-3 px-4 outline-none transition-all duration-300 rounded-lg text-sm
+        border-b border-[#e4e6ef] font-medium placeholder-[#A1A5B7] text-[#5E6278]
+        focus:ring-0 ring-0 focus:border-[#b5b5c3] focus:shadow-none;
+    }
+
+    input.input-text-solid{
+        @apply bg-[#f5f8fa] focus:bg-[#EEF3F7] border-none
+    }
+
+    input.input-check{
+        @apply rounded-lg outline-none cursor-pointer
+        transition-all duration-300 bg-[#eff2f5] border-0 text-[#009ef7] p-3 focus:ring-offset-0
+        focus:ring-offset-transparent focus:ring-0 ring-0 focus:border-[#b5b5c3] focus:shadow-none;
+    }
+
+    input.input-check-sm{
+        @apply p-[.6rem] rounded
+    }
+
+    input.input-check-lg{
+        @apply p-4
+    }
+
+    input.input-radio{
+        @apply rounded-full outline-none bg-[#eff2f5] border-0 text-[#009ef7] p-3
+        focus:ring-offset-0 focus:ring-offset-transparent transition-all duration-300
+        cursor-pointer focus:ring-0 ring-0 focus:border-[#b5b5c3] focus:shadow-none;
+    }
+
+    input.input-radio-sm{
+        @apply p-[.6rem]
+    }
+
+    input.input-radio-lg{
+        @apply p-4
+    }
+
+    textarea.textarea{
+        @apply py-4 px-4 outline-none transition-colors duration-300
+        rounded-lg text-sm border-b border-[#e4e6ef] font-medium text-[#5E6278]
+        focus:ring-0 ring-0 focus:border-[#b5b5c3] focus:shadow-none placeholder-[#A1A5B7];
+    }
+
+    .input-icon-label{
+        @apply flex items-center overflow-hidden rounded-lg transition-all duration-300 border border-[#e4e6ef] focus-within:border-[#b5b5c3]
+    }
+
+    .input-icon-icon{
+        @apply ml-2 p-3 bg-light h-full flex items-center
+    }
+
+    input.input-icon-input{
+        @apply py-3 px-4 text-[#5E6278] outline-none focus:ring-0 ring-0 focus:border-white text-sm border-0 font-light
+    }
+
+}

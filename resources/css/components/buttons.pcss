@@ -1,0 +1,310 @@
+@layer components {
+    .btn{
+        @apply font-[500] rounded-[.475rem] text-sm leading-6 tracking-wide
+            /*grid*/ items-center justify-center
+        px-5 pb-2 pt-2.5
+        transition-colors ease-in-out duration-150
+    }
+
+    .btn-sm{
+        @apply px-3 pb-1 pt-1.5 text-xs
+    }
+
+    .btn-lg{
+        @apply px-6 pb-3 pt-3.5 text-lg
+    }
+
+    /* Base Buttons */
+    .btn-white{
+        @apply bg-white text-gray-500
+    }
+
+    .btn-active-white{
+        @apply hover:bg-white-active;
+    }
+
+    .btn-primary{
+        @apply bg-primary text-white;
+        svg{
+            @apply fill-white inline-block;
+        }
+    }
+
+    .btn-active-primary{
+        @apply hover:bg-primary-active hover:text-white;
+    }
+
+    .btn-light{
+        @apply bg-light text-gray-500;
+        svg{
+            @apply fill-gray-500 inline-block;
+        }
+    }
+
+    .btn-active-light{
+        @apply hover:bg-light-active hover:text-gray-500;
+    }
+
+    .btn-secondary{
+        @apply bg-secondary text-gray-700;
+        svg{
+            @apply fill-gray-700 inline-block;
+        }
+    }
+
+    .btn-active-secondary{
+        @apply hover:bg-secondary-active hover:text-gray-700;
+    }
+
+    .btn-success{
+        @apply bg-success text-white;
+        svg{
+            @apply fill-white inline-block;
+        }
+    }
+
+    .btn-active-success{
+        @apply hover:bg-success-active hover:text-white;
+    }
+
+    .btn-info{
+        @apply bg-info text-white;
+        svg{
+            @apply fill-white inline-block;
+        }
+    }
+
+    .btn-active-info{
+        @apply hover:bg-info-active hover:text-white;
+    }
+
+    .btn-warning{
+        @apply bg-warning text-white;
+        svg{
+            @apply fill-white inline-block;
+        }
+    }
+
+    .btn-active-warning{
+        @apply hover:bg-warning-active hover:text-white;
+    }
+
+    .btn-danger{
+        @apply bg-danger text-white;
+        svg{
+            @apply fill-white inline-block;
+        }
+    }
+
+    .btn-active-danger{
+        @apply hover:bg-danger-active hover:text-white;
+    }
+
+    .btn-dark{
+        @apply bg-dark text-white;
+        svg{
+            @apply fill-white inline-block;
+        }
+    }
+
+    .btn-active-dark{
+        @apply hover:bg-dark-active hover:text-white;
+    }
+
+    /* Light Style */
+    .btn-light-primary{
+        @apply bg-primary-light text-primary;
+        svg{
+            @apply fill-primary inline-block hover:fill-white;
+        }
+        &:hover svg{
+            @apply fill-white;
+        }
+    }
+
+    .btn-light-active-primary{
+        @apply hover:bg-primary-active hover:text-white;
+    }
+
+    .btn-active-light-primary{
+        @apply hover:bg-primary-light hover:text-primary;
+        &:hover svg{
+            @apply fill-primary;
+        }
+    }
+
+    .btn-light-success{
+        @apply bg-success-light text-success;
+        svg{
+            @apply fill-success inline-block transition-colors ease-in-out duration-150;
+        }
+        &:hover svg{
+            @apply fill-white;
+        }
+    }
+
+    .btn-light-active-success{
+        @apply hover:bg-success-active hover:text-white;
+    }
+
+    .btn-light-info{
+        @apply bg-info-light text-info;
+        svg{
+            @apply fill-info inline-block transition-colors ease-in-out duration-150;
+        }
+        &:hover svg{
+            @apply fill-white;
+        }
+    }
+
+    .btn-light-active-info{
+        @apply hover:bg-info-active hover:text-white;
+    }
+
+    .btn-light-warning{
+        @apply bg-warning-light text-warning;
+        svg{
+            @apply fill-warning inline-block transition-colors ease-in-out duration-150;
+        }
+        &:hover svg{
+            @apply fill-white;
+        }
+    }
+
+    .btn-light-active-warning{
+        @apply hover:bg-warning-active hover:text-white;
+    }
+
+    .btn-light-danger{
+        @apply bg-danger-light text-danger;
+        svg{
+            @apply fill-danger inline-block transition-colors ease-in-out duration-150;
+        }
+        &:hover svg{
+            @apply fill-white;
+        }
+    }
+
+    .btn-light-active-danger{
+        @apply hover:bg-danger-active hover:text-white;
+    }
+
+    .btn-light-dark{
+        @apply bg-dark-light text-dark;
+        svg{
+            @apply fill-dark inline-block transition-colors ease-in-out duration-150;
+        }
+        &:hover svg{
+            @apply fill-white;
+        }
+    }
+
+    .btn-light-active-dark{
+        @apply hover:bg-dark-active hover:text-white;
+    }
+
+    /* Outline Style */
+    .btn-outline{
+        @apply outline outline-1 outline-offset-[-2px] bg-white;
+        svg{
+            @apply inline-block
+        }
+    }
+
+    .btn-outline-default{
+        @apply outline-dark text-gray-500 hover:bg-primary-light;
+        svg{
+            @apply fill-gray-500
+        }
+    }
+
+    .btn-outline-primary{
+        @apply outline-primary text-primary hover:bg-primary-light;
+        svg{
+            @apply fill-primary
+        }
+    }
+
+    .btn-outline-success{
+        @apply outline-success text-success hover:bg-success-light;
+        svg{
+            @apply fill-success
+        }
+    }
+
+    .btn-outline-info{
+        @apply outline-info text-info hover:bg-info-light;
+        svg{
+            @apply fill-info
+        }
+    }
+
+    .btn-outline-warning{
+        @apply outline-warning text-warning hover:bg-warning-light;
+        svg{
+            @apply fill-warning
+        }
+    }
+
+    .btn-outline-danger{
+        @apply outline-danger text-danger hover:bg-danger-light;
+        svg{
+            @apply fill-danger
+        }
+    }
+
+    .btn-outline-dark{
+        @apply outline-dark text-dark hover:bg-dark-light;
+        svg{
+            @apply fill-dark
+        }
+    }
+
+    /* Hover Effects */
+    .btn-hover-rise{
+        @apply transition-transform duration-300 ease-in-out hover:-translate-y-2
+    }
+
+    .btn-hover-scale{
+        @apply transition-transform duration-300 ease-in-out hover:scale-110
+    }
+
+    .btn-hover-rotate-start{
+        @apply transition-transform duration-300 ease-in-out hover:rotate-3
+
+    }
+
+    .btn-hover-rotate-end{
+        @apply transition-transform duration-300 ease-in-out hover:-rotate-3
+    }
+
+    /* Others */
+    .no-bg-svg-btn-blue{
+        @apply grid items-center justify-center w-[35px] h-[35px]
+        cursor-pointer rounded transition duration-150
+        hover:bg-[#F1FAFF];
+        svg{
+            @apply transition duration-150;
+        }
+        &:hover{
+            svg{
+                @apply fill-[#009ef7];
+            }
+        }
+    }
+
+    .no-bg-svg-btn-red{
+        @apply grid items-center justify-center p-1.5 ml-1
+        cursor-pointer rounded transition duration-150
+        hover:bg-[#FFF5F8];
+        svg{
+            @apply transition duration-150;
+        }
+        &:hover{
+            svg{
+                @apply fill-[#d9214e];
+            }
+        }
+    }
+
+}

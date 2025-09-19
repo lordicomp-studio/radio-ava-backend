@@ -77,7 +77,7 @@
                     <h4 class="text-sm mb-2 text-[#3f4254]">
                         تاریخ انتشار
                     </h4>
-<!--                    <DatePicker v-model="store.newData.release_date"/>-->
+                    <DatePicker v-model="store.newData.release_date"/>
                     <p v-if="errors['release_date']" class="text-xs text-danger font-light">{{ errors.release_date[0] }}</p>
                 </div>
 

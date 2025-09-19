@@ -95,7 +95,7 @@ import TablePicturedItem from "@/Components/admin/Widgets/Table/TablePicturedIte
 const t = i18n.global.t;
 
 export default {
-    name: "ArticleIndex",
+    name: "TrackIndex",
     layout: AdminLayout,
     props:{
         data: Object,

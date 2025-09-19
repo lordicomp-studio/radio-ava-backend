@@ -20,7 +20,7 @@
             <div class="left flex items-center">  <!-- space-x-2 space-x-reverse-->
                 <InertiaLink href="/admin/tracks/create" class="btn btn-primary btn-active-primary !m-0">
                     <SvgComponent class="transition ease-in-out duration-150" name="add-simple" size="1.1rem" color="#ccc"/>
-                    {{ $t('tables.common.add') }} {{ $t('pages.Articles') }}
+                    افزودن آهنگ
                 </InertiaLink>
             </div>
         </header>

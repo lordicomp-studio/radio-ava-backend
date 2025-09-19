@@ -106,7 +106,9 @@ class TracksController extends Controller
 
         return Inertia::render('Admin/Tracks/CreateForm', [
             'isEdit' => true,
-            'formerData' => $track->where('id', $track->id)->with('artist', 'cover', 'categories', 'tags', 'trackFiles')->first(),
+            'formerData' => $track->where('id', $track->id)
+                ->with('artist', 'cover', 'categories', 'tags', 'trackFiles', 'album')
+                ->first(),
             'allCategories' => $allCategories,
             'allTags' => $allTags,
         ]);

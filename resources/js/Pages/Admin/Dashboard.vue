@@ -1,5 +1,6 @@
 <template >
-    <section class="simpleNumbers bg-white p-4 rounded-lg">
+    <h2>coming soon</h2>
+<!--    <section class="simpleNumbers bg-white p-4 rounded-lg">
         <div class="w-40 mb-2">
             <SelectBasic
                 :optionsArray="['1 days', '3 days', '7 days', '1 month', '3 months', '6 months', '1 year']"
@@ -29,7 +30,7 @@
             </h3>
             <LineChart />
         </div>
-    </section>
+    </section>-->
 </template>
 
 <script>

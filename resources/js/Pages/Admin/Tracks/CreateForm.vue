@@ -32,7 +32,7 @@
                 <div class="mt-7">
                     <SimpleTextInput
                         :isEssential="true"
-                        label="طول"
+                        label="زمان اهنگ(ثانیه)"
                         errorKeyName="duration"
                         v-model="store.newData.duration"
                         :errors="errors"

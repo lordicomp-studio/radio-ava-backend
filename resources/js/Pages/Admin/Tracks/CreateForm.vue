@@ -205,6 +205,7 @@ export default {
                 lyrics_file_url: store.newData.lyrics_file_url,
                 release_date: store.newData.release_date,
                 cover_id: store.photo?.id,
+                album_id: store.newData.album?.id,
                 artist_id: store.newData.artist?.id,
                 tags: tagIds,
                 categories: categoryIds,
